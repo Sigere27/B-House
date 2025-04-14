@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Company</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Explore the World with Us</h1>
+            <nav>
+                <ul class="nav">
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#booking">Book a Ticket</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="destinations" class="section destinations">
+        <h2>Our Top Destinations</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="images/paris.jpg" alt="Paris">
+                <h3>Paris, France</h3>
+                <p>The city of love awaits you!</p>
+            </div>
+            <div class="card">
+                <img src="images/bali.jpg" alt="Bali">
+                <h3>Bali, Indonesia</h3>
+                <p>A tropical paradise like no other.</p>
+            </div>
+            <div class="card">
+                <img src="images/newyork.jpg" alt="New York">
+                <h3>New York, USA</h3>
+                <p>The city that never sleeps.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section about">
+        <h2>About Us</h2>
+        <p>We are a travel company dedicated to offering unforgettable experiences. With over 10 years in the travel industry, we specialize in curated trips for adventurers and explorers.</p>
+    </section>
+
+    <section id="booking" class="section booking">
+        <h2>Book Your E-Ticket</h2>
+        <form id="booking-form">
+            <label for="destination">Destination:</label>
+            <select id="destination" name="destination" required>
+                <option value="paris">Paris, France</option>
+                <option value="bali">Bali, Indonesia</option>
+                <option value="newyork">New York, USA</option>
+            </select>
+
+            <label for="date">Travel Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    <section id="contact" class="section contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="cname">Name:</label>
+            <input type="text" id="cname" name="name" required>
+            
+            <label for="cemail">Email:</label>
+            <input type="email" id="cemail" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Travel Company. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
